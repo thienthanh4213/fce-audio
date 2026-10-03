@@ -1,0 +1,30 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cambridge English First — FCE 7 · Test 1 · Part 4</title><style>
+:root{--bg:#f7f5fc;--card:#fff;--ink:#1e1533;--mut:#6b6280;--pri:#7c3aed;--pri2:#ede9fe;--line:#e2dcf0}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1820;--card:#15232e;--ink:#e6f0f6;--mut:#94a9b8;--pri:#a78bfa;--pri2:#2e1d55;--line:#22384a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:520px;margin:0 auto;padding:20px 16px 40px}
+.kick{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--pri);font-weight:700}
+h1{font-size:26px;margin:4px 0 2px}.sub{color:var(--mut);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+audio{width:100%}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+button{flex:1;min-width:64px;border:1px solid var(--line);background:var(--pri2);color:var(--ink);border-radius:10px;padding:10px 6px;font:600 15px system-ui;cursor:pointer}
+button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.lbl{font-size:13px;color:var(--mut);margin:14px 0 0}
+nav{display:flex;justify-content:space-between;margin-top:16px;font-size:15px}
+a{color:var(--pri);text-decoration:none;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8px 0 14px}
+.grid a{display:block;text-align:center;padding:9px 0;border:1px solid var(--line);border-radius:9px;background:var(--card)}
+h2{font-size:17px;margin:18px 0 4px}h3{font-size:14px;color:var(--mut);margin:8px 0 0;font-weight:600}
+footer{margin-top:28px;text-align:center;font-size:12px;color:var(--mut)}
+</style></head><body><div class="wrap">
+<div class="kick">Listening · Dictation Cloze</div><h1>Test 1 — Part 4</h1><p class="sub">Cambridge English First — FCE 7</p>
+<div class="card"><audio controls preload="metadata" src="audio/fce7-test01-p4.mp3"></audio>
+<p class="lbl">Tua lại / tới</p><div class="row"><button data-sk="-10">⟲ 10s</button><button data-sk="-5">⟲ 5s</button><button data-sk="5">5s ⟳</button></div>
+<p class="lbl">Tốc độ</p><div class="row"><button data-sp="0.75">0.75×</button><button data-sp="0.9">0.9×</button><button data-sp="1" class="on">1×</button><button data-sp="1.15">1.15×</button></div></div>
+<nav><span><a href=fce7-test01-p3.html>◀ Part 3</a></span><a href="index.html">Tất cả bài nghe</a><span></span></nav><footer>Ms. Thủy Tiên · 0388929741</footer></div><script>
+const a=document.querySelector('audio');
+document.querySelectorAll('[data-sp]').forEach(b=>b.onclick=()=>{a.playbackRate=+b.dataset.sp;document.querySelectorAll('[data-sp]').forEach(x=>x.classList.toggle('on',x===b));});
+document.querySelectorAll('[data-sk]').forEach(b=>b.onclick=()=>{a.currentTime=Math.max(0,a.currentTime+ +b.dataset.sk);a.play();});
+</script></body></html>
